@@ -1,5 +1,7 @@
-<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
-<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+  <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam;'>
     <!-- handle marker with your own pattern -->
@@ -14,16 +16,16 @@
       <a-text value= "MUST BE THE HEART"rotation="-90 0 0" position="-2.5 0 0.3"></a-text>
     </a-marker>
 
-<a-assets>
-    <img id="robot" src="robot.png">
-  </a-assets>
+    <a-assets>
+      <img id="robot" src="robot.png">
+    </a-assets>
 
     <!-- handle barcode marker -->
     <a-marker preset='kanji'>
-     <a-plane color="white" height="2" width="2" rotation="-90 0 0" position="-2.5 0 -0.3" material="#robot"></a-plane>
-    </a-marker>
+      <a-plane color="white" height="2" width="2" rotation="-90 0 0" position="-0.5 0 0" material="#robot"></a-plane>
+   </a-marker>
 
-    <!-- add a simple camera -->
-    <a-entity camera></a-entity>
-  </a-scene>
+   <!-- add a simple camera -->
+   <a-entity camera></a-entity>
+ </a-scene>
 </body>
