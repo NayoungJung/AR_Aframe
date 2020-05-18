@@ -9,14 +9,18 @@
 
     <!-- handle marker with hiro preset -->
     <a-marker preset='hiro'>
-      <a-text value="Mittler zwischen"> </a-text> 
-      <a-text value="Hirn und Händen"> </a-text> 
-      <a-text value= "muss das Herz sein"></a-text>
+      <a-text value="THE MEDIATOR BETWEEN" rotation="-90 0 0" position="-2.5 0 -0.3"> </a-text>
+      <a-text value="HEAD AND HANDS" rotation="-90 0 0" position="-2.5 0 0"> </a-text> 
+      <a-text value= "MUST BE THE HEART"rotation="-90 0 0" position="-2.5 0 0.3"></a-text>
     </a-marker>
+
+<a-assets>
+    <img id="robot" src="robot.png">
+  </a-assets>
 
     <!-- handle barcode marker -->
     <a-marker preset='kanji'>
-     <a-image src="title.png"></a-image>
+     <a-plane color="white" height="2" width="2" rotation="-90 0 0" position="-2.5 0 -0.3" material="#robot"></a-plane>
     </a-marker>
 
     <!-- add a simple camera -->
